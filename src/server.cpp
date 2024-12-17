@@ -431,7 +431,8 @@ namespace Modbus {
       rc = d->receive (d);
       rc = d->task (rc);
     }
-  }
+    return nullptr;
+  } 
   // ---------------------------------------------------------------------------
   //
   //                         Modbus::Json Namespace
